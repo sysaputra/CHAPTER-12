@@ -66,4 +66,59 @@ Risiko berikut terkait dengan produksi catatan :
 Akses yang sah dan memaksa lembaga pengungkapan Pemerintah mencari informasi dapat memilih untuk memaksa pengungkapan informasi dari penyedia layanan bukannya langsung dari pemilik data. Hal ini merugikan pemilik data yang karena baik penyedia maupun pemerintah diperlukan untuk memberitahu mereka. Bahkan, dibeberapa negara memiliki perintah gag yang mencegah penyedia layanan dari yang menyediakan notifi kasi sama sekali. Lihat Tabel 12.1 untuk contoh hukum yang mengatur akses pemerintah.
 
 TABEL 12.1 Contoh hukum yang mengatur akses pemerintah
+
+
+----ALINEA 3 - 131110731---- 
+
+Safe Harbor
+AS-Uni Eropa Safe Harbor Framework diciptakan untuk memungkinkan transfer data pribadi antara sumber daya di Amerika Serikat dan Uni Eropa, yang memiliki batasan yang berbeda pada privasi. Hal ini memungkinkan organisasi US individu untuk mematuhi EU Directive tentang Perlindungan Data. Sebuah kerangka yang sama ada antara Amerika Serikat dan Swiss untuk memfasilitasi pemenuhan UU Federal Swiss tentang Perlindungan Data. Menurut Departemen Perdagangan AS, dalam rangka untuk berpartisipasi, organisasi Amerika Serikat harus memenuhi tujuh prinsip Safe Harbor: 
+
+Perhatikan Individu harus diberitahukan tentang informasi yang dikumpulkan, digunakan, dan diungkapkan.
+
+Penghargaan Individu harus diberi kesempatan untuk memilih keluar memiliki informasi pribadi mereka diungkapkan kepada pihak ketiga. 
+
+Transfer ke Organisasi pihak ketiga harus memastikan bahwa pihak ketiga menganut prinsip Safe Harbor atau sesuai dengan Petunjuk Uni Eropa tentang Perlindungan Data. 
+
+Akses Dengan beberapa pengecualian, individu harus diizinkan untuk mengakses dan mengelola informasi pribadi mereka. 
+
+Keamanan perlindungan yang wajar harus diterapkan untuk melindungi informasi pribadi. 
+
+Data Integritas data harus dapat diandalkan dan akurat. 
+
+Penegakan sertifikasi harus dijaga setiap tahun untuk tetap dalam program, dan harus ada mekanisme di tempat kedua untuk secara efektif menangani keluhan dan pelanggaran dan untuk memverifikasi kepatuhan.
+
+Mengelola Identitas di Cloud
+
+Tujuan dari manajemen identitas adalah untuk mengelola siklus hidup pengguna dan entitas lain yang membutuhkan akses terpercaya untuk sumber daya organisasi. Manajemen identitas juga sejalan dengan privasi, dan catatan identitas bagi pengguna umumnya mengandung PII yang mungkin tunduk pada peraturan privasi. Sebelum membahas karakteristik sistem manajemen identitas, perlu untuk memahami tiga unsur utama kontrol identitas dan akses: 
+
+Authentication Authentication adalah proses verifikasi identitas suatu entitas dengan memvalidasi satu atau lebih faktor: sesuatu yang Anda tahu, sesuatu yang Anda miliki, atau sesuatu yang Anda. Kombinasi pengguna ID-password (sesuatu yang Anda tahu) saat ini bentuk yang paling banyak digunakan otentikasi. Bentuk lain termasuk token keamanan atau kartu pintar (sesuatu yang Anda memiliki) dan biometrik (sesuatu yang Anda). 
+
+Otorisasi Otorisasi adalah proses menentukan apakah suatu entitas diperbolehkan untuk mengakses sumber daya dan dengan apa yang tingkat hak akses berdasarkan daftar kontrol akses.
+
+Mengelola Identitas di Cloud
+Peran Berbasis Access Control Menggunakan kontrol akses berbasis peran (RBAC) adalah cara yang efektif untuk mengelola akses bagi sejumlah besar pengguna. Alih-alih menjadi izin ditugaskan langsung, pengguna ditugaskan untuk kelompok berbasis peran dan hak akses yang dikelola di tingkat kelompok.
+
+Akuntansi adalah proses penggunaan sumber daya pelacakan untuk keperluan operasional, keamanan, dan kepatuhan. Secara operasional, akuntansi dapat digunakan untuk memantau kapasitas dan penagihan. Pemantauan log akses dan kemampuan untuk menghasilkan jejak audit sering diperlukan oleh kebijakan keamanan dan regulasi. 
+Sebuah organisasi harus mempertimbangkan keamanan, privasi, dan kebutuhan kepatuhan ketika mengevaluasi sebuah sistem manajemen identitas. Salah satu karakteristik utama sistem harus mendukung adalah kemampuan untuk menetapkan pengguna untuk peran untuk mendukung pemisahan tugas, asosiasi pengguna dengan peran bisnis, dan kontrol akses berbasis peran. Selain itu, organisasi harus mempertimbangkan persyaratan seperti fungsi self-service (misalnya, reset password, update data pengguna) dan akses ke data pengguna.
+Mengelola identitas di awan menyajikan beberapa risiko dan tantangan, terutama yang berkaitan dengan kompleksitas dan interoperabilitas: 
+
+Identitas penyediaan pengadaan Identity adalah proses menciptakan dan menonaktifkan akun pengguna (penonaktifan juga dapat disebut pembatalan penyediaan). Dalam IaaS dan SaaS penyebaran, penyedia layanan dapat memiliki proses penyediaan eksklusif yang dapat menambah kompleksitas proses bisnis, terutama jika masing-masing menawarkan sebuah organisasi menggunakan memiliki metode yang berbeda provisioning. 
+
+Manajemen Credential Banyak standar keamanan dan hukum perlindungan data memiliki persyaratan untuk manajemen credential, khususnya account pengguna dan password. Sebuah organisasi harus memastikan bahwa kebutuhan kepatuhan terpenuhi untuk kebutuhan seperti transmisi aman dari password, kebijakan password yang kuat, penyimpanan password, dan self-service reset password. 
+
+Kompleksitas dapat dikurangi melalui penggunaan manajemen identitas federasi dan single sign-on (SSO). Ketika memilih penyedia layanan cloud, organisasi harus mempertimbangkan lingkungan dan standar didukung oleh vendor potensi yang ada. 
+
+Manajemen Federated Identity
+Dalam membahas federasi, kami mengacu pada penyedia layanan dan penyedia identitas. Sebuah penyedia layanan aplikasi atau layanan, dan penyedia identitas adalah otoritas otentikasi. Sebuah organisasi mungkin penyedia sendiri identitas (misalnya, melalui layanan direktori organisasi) atau mungkin menggunakan sumber eksternal (misalnya, OpenID, Google, Microsoft Windows Live ID). 
+Federasi memungkinkan pengguna di domain keamanan yang berbeda untuk berbagi layanan tanpa identitas di setiap domain. penyedia identitas memberikan informasi (yaitu, atribut identitas) ke penyedia layanan, mengambil beban otentikasi off dari penyedia layanan individu dan menempatkannya dengan penyedia identitas dipercaya. Hal ini juga memungkinkan organisasi untuk mengambil keuntungan dari single sign-on (SSO). 
+
+Single Sign-On 
+Pelaksana SSO memungkinkan pengguna organisasi untuk mengotentikasi sekali dan mengakses beberapa aplikasi, seperti yang ditunjukkan pada Gambar 12.2. Hal ini meningkatkan efisiensi dengan merampingkan proses otentikasi, mengurangi overhead TI dengan mengurangi tugas administrasi rekening, dan meningkatkan keamanan dengan mewajibkan pengguna untuk mengingat hanya satu password. (Meningkatkan jumlah password pengguna harus ingat meningkatkan kemungkinan bahwa pengguna akan menuliskannya.) SSO bisa konfigurasi menggunakan Kerberos di kedua Windows dan lingkungan Unix / Linux, menggunakan smart card, dan melalui standar seperti OpenID, Keamanan Sikap tegas Markup Language (SAML), dan Layanan Web Federation Bahasa (WS-Federation).
+
+ 
+GAMBAR 12.2 Sederhana diagram SSO menunjukkan pengguna otentikasi ke server SSO dan mengakses email dan web aplikasi
+
+The Essentials dan Beyond 
+Cloud computing sedang diadopsi pada kecepatan yang cepat, dan prakiraan industri saat ini menunjukkan pertumbuhan yang stabil selama lima sampai delapan tahun ke depan. Sebagai tanggapan, Data Terbuka Pusat Alliance, Manajemen Satgas Distributed, dan standar organisasi lain yang bekerja untuk membangun seperangkat standar komputasi awan. pemerintah dunia juga mengambil melihat lebih dekat pada komputasi awan, termasuk menggunakan kedua sektor swasta dan publik, yang harus menghasilkan undang-undang yang baru dan diperbarui. 
+
  
