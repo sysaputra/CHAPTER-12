@@ -1,0 +1,69 @@
+BAB 12
+PRIVASI DAN KETAATAN (HUKUM)
+
+----ALINEA 1 - 131110685---- 
+ 
+Banyak organisasi yang tunduk pada berbagai hukum persyaratan yang mengatur bagaimana data dikumpulkan, disimpan, diproses, dan dibagikan. Organisasi mempertimbangkan mengadopsi layanan cloud harus mengidentifikasi persyaratan hukum yang berlaku dan mempertimbangkan efek dari layanan cloud.  Bab ini memberikan gambaran umum hukum dan risiko kepatuhan.
+ 
+? Mengidentifikasi risiko hukum
+? Mengidentifikasi risiko privasi
+? Mengelola identitas di awan
+   
+Mengidentifikasi Risiko Hukum
+ 
+Sebuah organisasi tidak bisa hanya mengandalkan penyedia layanan cloud untuk memastikan kepatuhan terhadap hukum dan peraturan. Meskipun penyedia mungkin memiliki beberapa tanggung jawab sebagai pengontrol data (tergantung peran penyedia dalam pengolahan data), pada akhirnya tanggung jawab dan tanggung jawab hukum terletak pada organisasi atau individu yang memiliki data.
+Risiko hukum berikut harus dipertimbangkan oleh organisasi yang mengadopsi layanan cloud :
+ 
+Lokasi Data dan yurisdiksi Data di awan dapat disimpan atau diproses di beberapa pusat data di mana saja di dunia. Walaupun memiliki data di beberapa lokasi memiliki manfaat yang jelas untuk pemulihan bencana, juga dapat menimbulkan beberapa masalah hukum yang signifikan. Sebagai contoh, data dapat dikenakan pembatasan ekspor, dan beberapa undang-undang memiliki persyaratan fasilitas. Karena hukum dunia umumnya tidak mengikuti kemajuan teknologi dan sering tidak selaras, yurisdiksi menjadi risiko.
+ 
+GAMBAR 12.1 Sebuah peta yang menunjukkan perbedaan potensial di lokasi geografis antara pelanggan, penyedia, dan pusat data
+Data di awan yang berpotensi tunduk pada hukum lokasi berikut:
+? Lokasi server fisik
+? Lokasi kantor pusat penyedia layanan
+? Lokasi pemilik data
+? Lokasi data melewati antara penyedia server
+
+	Risiko ini dapat diatasi dengan kontrak yang mewajibkan penyedia layanan untuk menyimpan data dalam lokasi geografis yang tepat.
+ 
+Isolasi data Isolasi data mungkin diperlukan oleh peraturan yang membahas keamanan data. Dalam komputasi tradisional, data dapat diisolasi secara fisik (misalnya, server terpisah) atau logis (misalnya, server virtual yang terpisah, penyimpanan file, atau database).
+Di awan, multitenancy adalah umum, dan mungkin lebih sulit untuk memastikan isolasi data yang memenuhi persyaratan tercapai. Dalam lingkungan cloud multitenant, isolasi adalah logis.
+ 
+Hal ini dapat terjadi pada tingkat hypervisor, dengan mengisolasi mesin virtual, atau pada tingkat database, yang mungkin melibatkan berikut:
+? Isolasi di tingkat baris dalam database bersama yang dicapai dengan mengidentifikasi secara unik pada setiap penyewa.
+? Isolasi di tingkat skema diimplementasikan dengan menggunakan shared database dengan tabel terpisah untuk masing-masing penyewa.
+? Tingkat terbesar isolasi terjadi dengan memberikan penyewa dengan database individu , meskipun ini menyebabkan peningkatan biaya.
+ 
+Kerusakan data Hal ini penting untuk mempertimbangkan apa yang terjadi pada data di awan setelah kontrak antara penyedia layanan organisasi dan awan berakhir atau diakhiri. Organisasi harus memiliki jaminan (melalui kontrak atau hal layanan) yang datanya akan dihapus dari semua server, termasuk arsip, sehingga tidak dapat dipulihkan.
+ 
+Kebangkrutan 
+Jika penyedia layanan cloud file bangkrut, ada risiko bahwa data mungkin terpapar selama disposisi aset. Bahkan, data yang mungkin dianggap aset perusahaan dijual, tergantung pada persyaratan penyedia layanan.
+ 
+Ketentuan Layanan 
+Penyedia layanan awan tidak selalu secara individual kontrak dengan pelanggan. Mereka mungkin telah menerbitkan hal layanan dan kebijakan privasi yang berlaku untuk semua pelanggan. Ketentuan dan kebijakan ini harus ditinjau secara cermat sebelum memilih penyedia layanan. Bahkan jika hal tampaknya kompatibel dengan kebutuhan pemilik data ini, selalu ada risiko bahwa penyedia akan mengubah persyaratan layanan, mungkin tanpa pemberitahuan. Hal ini dapat mengakibatkan sipil atau bahkan pidana bagi pemilik data.
+ 
+Selain itu, kategori informasi tertentu memiliki spesifik hukum persyaratan yang dapat mempengaruhi penggunaan layanan cloud.
+Berikut adalah beberapa contoh:
+
+Informasi kesehatan Di Amerika Serikat, privasi dan keamanan kesehatan catatan diatur oleh Asuransi Portabilitas Kesehatan dan Akuntabilitas Act (HIPAA). HIPAA terutama mempengaruhi penyedia layanan kesehatan dan rencana kesehatan (Entitas tertutup). Namun, kepatuhan juga diperlukan dari rekan bisnis yang memiliki akses ke informasi kesehatan dilindungi elektronik (Ephi). Ini akan termasuk penyedia layanan cloud. Entitas tertutup dan penyedia layanan cloud yang diperlukan untuk masuk ke dalam perjanjian rekan bisnis yang mendefinisikan kewajiban kepatuhan masing-masing pihak.
+ 
+Informasi khusus Profesional tertentu, seperti dokter dan pengacara, memiliki kewajiban hukum untuk menjaga informasi klien bersifat rahasia kerahasiaan, meskipun hukum bervariasi oleh negara bagian dan negara. Hal penyedia layanan harus ditinjau dengan hati-hati untuk menghindari merusak hak hukum.
+ 
+Secara pribadi mengindentifikasi informasi dapat (PII) Jenis informasi dapat digunakan untuk secara unik mengidentifikasi seorang individu. Jenis data dikategorikan sebagai PII tergantung pada yurisdiksi, seperti halnya persyaratan keamanan dan batas atas menggunakan. Contoh PII termasuk informasi kontak, informasi keuangan, secara online username akun, dokumen identitas yang dikeluarkan pemerintah (misalnya, SSN, paspor), dan data biometrik.
+ 
+Kami membahas risiko spesifik yang terkait dengan privasi di bagian "Mengidentifikasi Privasi Risiko "kemudian dalam bab ini.
+ 
+Catatan Manajemen
+Kedua organisasi sektor publik dan swasta dapat dikenakan retensi catatan
+Persyaratan. Sebelum pindah ke awan, organisasi harus menentukan apa catatan persyaratan retensi mereka didasarkan pada bisnis, hukum, dan kebutuhan peraturan; memastikan bahwa kebijakan internal mereka sesuai; dan kemudian memastikan kepatuhan yang dapat dipertahankan di awan.
+
+	Berikut kondisi yang berkaitan dengan catatan manajemen dan retensi dapat menyebabkan risiko:
+? metadata asli dikaitkan dengan catatan arsip periode penyimpanan arsip berbasis Provider
+? lebih pendek dari yang dibutuhkan oleh organisasi
+? Pemusnahan arsip setelah retensi berakhir
+ 
+Risiko berikut terkait dengan produksi catatan :
+ 
+Akses yang sah dan memaksa lembaga pengungkapan Pemerintah mencari informasi dapat memilih untuk memaksa pengungkapan informasi dari penyedia layanan bukannya langsung dari pemilik data. Hal ini merugikan pemilik data yang karena baik penyedia maupun pemerintah diperlukan untuk memberitahu mereka. Bahkan, dibeberapa negara memiliki perintah gag yang mencegah penyedia layanan dari yang menyediakan notifi kasi sama sekali. Lihat Tabel 12.1 untuk contoh hukum yang mengatur akses pemerintah.
+
+TABEL 12.1 Contoh hukum yang mengatur akses pemerintah
+ 
